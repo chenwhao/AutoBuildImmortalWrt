@@ -36,7 +36,7 @@ echo "Applying hardcoded network configuration..." >> $LOGFILE
 
 # 1. 配置 LAN 接口
 uci set network.lan.proto='static'
-uci set network.lan.ipaddr='192.168.8.1'      # 您期望的内网管理地址
+uci set network.lan.ipaddr='192.168.8.1'      # 内网管理地址
 uci set network.lan.netmask='255.255.255.0'
 uci set network.lan.device='eth0'            # 强制 LAN 口为 eth0
 echo "LAN configured: static, 192.168.8.1, on eth0." >> $LOGFILE
